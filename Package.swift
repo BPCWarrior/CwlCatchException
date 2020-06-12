@@ -2,13 +2,12 @@
 import PackageDescription
 
 let package = Package(
-	name: "CwlCatchException",
+	name: "FSCalendar",
 	products: [
-		.library(name: "CwlCatchException", targets: ["CwlCatchException"]),
+		.library(name: "FSCalendar", targets: ["FSCalendar"]),
 	],
 	targets: [
-		.target(name: "CwlCatchException", dependencies: [.target(name: "CwlCatchExceptionSupport")]),
-		.target(name: "CwlCatchExceptionSupport"),
-		.testTarget(name: "CwlCatchExceptionTests", dependencies: [.target(name: "CwlCatchException")])
+		.target(name: "FSCalendar"),
+		.testTarget(name: "FSCalendarTests", dependencies: [.target(name: "FSCalendar")])
 	]
 )
